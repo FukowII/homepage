@@ -1,0 +1,68 @@
+.a{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 500px;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card:hover img {
+    opacity: 0.8;
+  }
+  
+  .animate-car {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(50%) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  
+  
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .card-text {
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+}
