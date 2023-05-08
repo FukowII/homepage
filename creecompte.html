@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDbi-MNWtwuELsFBU0HhB-cPwqEpeQTSCk",
+          authDomain: "ece-finale.firebaseapp.com",
+          projectId: "ece-finale",
+          storageBucket: "ece-finale.appspot.com",
+          messagingSenderId: "317408960080",
+          appId: "1:317408960080:web:5803c57c18e9a793377b55"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      	<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="firebase.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-md">
+      <h1 class="text-2xl font-bold mb-5">Création de compte</h1>
+      <form id="cree">
+        <div class="mb-4">
+          <label
+            for="nom"
+            class="block text-gray-700 font-bold mb-2"
+            >Nom</label
+          >
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            class="border border-gray-400 p-2 w-full rounded-md"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="prenom"
+            class="block text-gray-700 font-bold mb-2"
+            >Prénom</label
+          >
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            class="border border-gray-400 p-2 w-full rounded-md"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="email"
+            class="block text-gray-700 font-bold mb-2"
+            >Adresse e-mail</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="border border-gray-400 p-2 w-full rounded-md"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="password"
+            class="block text-gray-700 font-bold mb-2"
+            >Mot de passe</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="border border-gray-400 p-2 w-full rounded-md"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <button
+            type="submit"
+            class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+          >
+            Créer un compte
+          </button>
+        </div>
+      </form>
+    </div>
+    
+   
+  </body>
+</html>

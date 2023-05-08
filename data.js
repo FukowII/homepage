@@ -1,0 +1,87 @@
+const Voiture = {
+    "Voiture": [
+      {
+        "name": "Audi RS3",
+        "img": "",
+        "description": "",
+        "prix": "500"
+      },
+      {
+        "name": "Audi RS7",
+        "img": "",
+        "description": "",
+        "prix": "800"
+      },
+      {
+        "name": "Audi RSQ8",
+        "img": "",
+        "description": "",
+        "prix": "800"
+      },
+      {
+        "name": "BMW M3",
+        "img": "",
+        "description": "",
+        "prix": "900"
+      },
+      {
+        "name": "C63",
+        "img": "",
+        "description": "",
+        "prix": "1000"
+      },
+      {
+        "name": "G63",
+        "img": "",
+        "description": "",
+        "prix": "500"
+      },
+      {
+        "name": "Urus",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      },
+      {
+        "name": "Porsche Panamera",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      },
+      {
+        "name": "Bugatti Chiron",
+        "img": "",
+        "description": "",
+        "prix": "3000"
+      },
+      {
+        "name": "Aston Martin",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      },
+      {
+        "name": "Bentley",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      },
+      {
+        "name": "Rolls-Royce",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      },
+      {
+        "name": "lamborghini huracan",
+        "img": "",
+        "description": "",
+        "prix": "1500"
+      }
+    ]
+  };
+  
+
+  const name = "Voitureaudi"
+
+  export {Voiture, name} 
