@@ -16,7 +16,7 @@ const getData = async () => {
   const VoitureContainer = document.querySelector("#Catalogue");
   VoitureContainer.classList.add('grid', 'grid-cols-1', 'sm:grid-cols-2', 'md:grid-cols-3', 'gap-4');
 
-  // Nouvelle div pour la carte sélectionnée
+  // Nouvelle div pour la carte sélectionne
   const selectedVoitureDiv = document.createElement('div');
   selectedVoitureDiv.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'h-full', 'bg-gray-800', 'bg-opacity-75', 'flex', 'items-center', 'justify-center', 'hidden');
   document.body.appendChild(selectedVoitureDiv);
@@ -27,14 +27,14 @@ const getData = async () => {
     voitureCard.innerHTML = `
       <img class="w-full h-40 object-cover" src="${voiture.img}"/>
       <div class="rounded-xl p-4 flex flex-col justify-center items-center text-2xl font-bold">${voiture.name}</div>
-      <div class="rounded-xl p-4 flex flex-col justify-center items-center text-lg"> A partir de :  ${voiture.prix}€</div>
+      <div class="rounded-xl p-4 flex flex-col justify-center items-center text-lg"> A partir de :  ${voiture.prix}</div>
       <div class="rounded-xl p-4 flex flex-col justify-center items-center text-sm">${voiture?.description?.slice(0, 100)}</div>
       <a href="" class="w-full inline-flex justify-center text-white bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base">Louer !</a>
     `;
-
-    // Ajouter l'écouteur de clic à la carte
+    // code pour le click
+    // Ajouter l'ecouteur de clic à la carte
     voitureCard.addEventListener('click', () => {
-      // Afficher la carte sélectionnée
+      // Afficher la carte sélectionnee
       selectedVoitureDiv.innerHTML = `
         <div class="bg-white w-4/5 h-4/5 p-4 rounded-lg">
           <img class="w-full h-40 object-cover" src="${voiture.img}"/>
@@ -49,16 +49,13 @@ const getData = async () => {
     VoitureContainer.appendChild(voitureCard);
   });
 
-  // Ajouter un écouteur de clic sur la div de la carte sélectionnée pour la cacher lorsque l'utilisateur clique en dehors de la carte
+  // Ajouter un ecouteur de clic sur la div de la carte selectionnee pour la cacher lorsque l'utilisateur clique en dehors de la carte
   selectedVoitureDiv.addEventListener('click', (event) => {
     if (event.target === selectedVoitureDiv) {
       selectedVoitureDiv.classList.add('hidden');
     }
   });
 };
-
-
-
 
   getData(); // ca sinon ca marche pas 
   
